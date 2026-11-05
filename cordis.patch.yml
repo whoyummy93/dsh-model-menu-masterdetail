@@ -1,0 +1,8 @@
+# dsh-model-menu-masterdetail bundle patch: mounts the client-only plugin
+# under the stable plugin id `model-menu-masterdetail`. The plugin's client.js
+# shadows the builtin composer model seat (`conversation.input.model`) at
+# priority -1 with a master-detail two-column menu (providers left, models
+# right, hover to switch, fixed 420x280, wheel scroll, wrapping labels).
+- insert:
+    - id: model-menu-masterdetail
+      name: dsh-model-menu-masterdetail
