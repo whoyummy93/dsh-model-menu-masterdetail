@@ -3,6 +3,20 @@
   "version": "1.0.0",
   "description": "Composer model seat as a master-detail two-column menu: providers on the left, models of the hovered provider on the right, fixed 420x280 with independent wheel scrolling, wrapping labels.",
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whoyummy93/dsh-model-menu-masterdetail.git"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "model-selection",
+    "master-detail"
+  ],
+  "peerDependencies": {
+    "@deepseek-ai/dsh": ">=0.1.7"
+  },
   "dsh": {
     "client": {
       "platform": "web",

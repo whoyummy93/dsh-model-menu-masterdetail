@@ -12,18 +12,20 @@ DeepSeek Harness (dsh) 客户端插件：把聊天输入框的「模型选择」
 
 ## 安装（web / headless profile）
 
+方式一（推荐，npm）：
+
 ```sh
-# 1) 克隆到任意目录（或 dsh 插件目录）
-git clone https://github.com/whoyummy93/dsh-model-menu-masterdetail.git "$env:USERPROFILE\.dsh\plugins\dsh-model-menu-masterdetail"
-
-# 2) 在 profile 里挂上依赖（web profile 示例）
-dsh plugin --profile web add "link:C:/Users/whoyummy/.dsh/plugins/dsh-model-menu-masterdetail"
-
-# 3) 重启 dsh web 生效
+dsh plugin --profile web add dsh-model-menu-masterdetail
 ```
 
-桌面（Electron）客户端：在 desktop profile 的 `package.json` 里加同样的 `link:` 依赖即可，代码同一份（desktop 0.2.0-rc.2 的 primitives 全部兼容）。
+方式二（GitHub）：
 
+```sh
+git clone https://github.com/whoyummy93/dsh-model-menu-masterdetail.git "$env:USERPROFILE\.dsh\plugins\dsh-model-menu-masterdetail"
+dsh plugin --profile web add "link:C:/Users/whoyummy/.dsh/plugins/dsh-model-menu-masterdetail"
+```
+
+重启 dsh web 后生效。npm 包已发布到官方 registry：[dsh-model-menu-masterdetail](https://www.npmjs.com/package/dsh-model-menu-masterdetail)
 ## 卸载
 
 ```sh
